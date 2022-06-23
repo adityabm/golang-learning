@@ -1,0 +1,19 @@
+{{ template "layout" .}}
+
+{{ define "main" }}
+
+<form action="/submit" method="POST">
+    <div class="form">
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="name" required>
+    </div>
+
+    <div class="form">
+        <label for="class">Class : </label>
+        <input type="text" name="class" id="class" required>
+    </div>
+
+    <input type="submit" name="submit" id="submit" value="Submit">
+</form>
+
+{{ end }}

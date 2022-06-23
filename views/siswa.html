@@ -1,0 +1,16 @@
+{{ template "layout" .}}
+
+{{ define "main" }}
+
+{{ range .}}
+    <h5>ID Siswanya adalah {{ .ID }}</h5>
+    <h5>Nama Siswanya adalah {{ .Name }}</h5>
+    <h5>Kelas Siswanya adalah {{ .Class }}</h5>
+
+    <b>Note</b>
+    <h5>{{ .BayarSpp }}</h5>
+
+    <hr>
+{{ end }}
+
+{{ end }}
